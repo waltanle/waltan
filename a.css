@@ -1,0 +1,115 @@
+.menu {
+	text-align: center;
+	float: right;
+	margin: 10px;}
+table {
+	text-align: center;}
+a { 
+	color: #03d3fc; text-decoration: none;}
+td.here {
+	color: #d1002c;}
+body.main {
+	background: #ebe5c0;
+//	background: #66FFCC;
+	}
+.tm {
+	float:left;
+	width: 890;
+	line-height: 1.5;
+	font-size: 24;}
+.hmain {
+//	background: #c2c0b6;
+	background-image: url(img/svet.jpg);
+	border: 1px solid #dcd8e3;
+	padding: 10px;
+	margin: 0 0 10px 0;
+	}
+.pics {
+	float: left;
+	margin-right: 10px;
+}
+.lit {
+	position: fixed;
+	left: 0; bottom: 0;
+	padding: 10px;
+	background: #80f2b2;
+//	background: #66FFCC;
+	color: white;
+	width: 100%;
+	font-size: 20;}
+.lit a{
+	color: #3b0c16;
+}
+.histtxt {
+	float:left;
+	width: 60%;
+	font-size: 130%;
+	margin-left: 0px;}
+.plus {
+	width: 390;
+	float: left;
+	background: #b4ff8f;
+	padding-right: 10px;
+}
+.minus {
+	width: 400;
+	float: right;
+}
+.pm {
+	width: 800;
+	float: left;
+	font-size: 23;
+	line-height: 1.7;
+	border: 5px solid #525252;
+	background: #ff8f8f;
+	margin-left: 50px;
+}
+.lex {
+	float: left;
+}
+.rex {
+	float: right;
+}
+.cjt {
+	float:left;
+	width: 900;
+	line-height: 1.5;
+	font-size: 18;}
+.pics1 {
+	float: left;
+	margin-right: 10px;
+	margin-left: 5px;
+	margin-top: 80px;
+}
+.str {
+	width: 950px;
+	float: left;
+//	margin-left: 215px;
+	margin-left: 10px;
+}
+.nt {
+	color: #388e4f;
+}
+.na {
+		color: #bdba24;
+}
+.utf {
+	color: #910101;
+}
+.code {
+	border: 1px solid #ada5a5;
+	background: #e8e6e6;
+	padding-left: 50px;
+}
+.cp {
+	color: #d68322;
+}
+.p {
+	font-weight: bold;
+}
+.bb {
+	border: 1px solid #ada5a5;
+	background: #e8e6e6;
+	margin-bottom: 5px;
+	padding: 1px;
+}

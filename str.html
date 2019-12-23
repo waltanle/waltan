@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="a.css">
+<title>Структура HTML-документа</title>
+<meta charset="utf-8">
+</head>
+<body class="main">
+<div class="hmain">
+	<h1 align="center">Структура HTML-документа</h1>
+</div>
+<div class="lex">
+<p><img src="img/ex8.png" width="200"></p>
+<br><br><br><br><br><br>
+<p><img src="img/ex5.png" width="200"></p>
+<br><br><br><br><br><br>
+<p><img src="img/ex9.jpg" width="200"></p>
+</div>
+<div class="str">
+<p>HTML&#160;— теговый язык разметки документов. Любой документ на языке HTML представляет собой набор элементов, причём начало и конец каждого элемента обозначается специальными пометками&#160;— <i>тегами</i>. Элементы могут быть <i>пустыми</i>, то есть не содержащими никакого текста и других данных. В этом случае обычно не указывается закрывающий тег (например, тег переноса строки <code>&lt;br&gt;</code>&#160;— одиночный и закрывать его не нужно) . Кроме того, элементы могут иметь <i>атрибуты</i>, определяющие какие-либо их свойства (например, атрибут <code>href="</code> у ссылки). Атрибуты указываются в открывающем теге. Вот примеры фрагментов HTML-документа:
+</p>
+<ul><li class="bb"><code>&lt;strong&gt;Текст между двумя тегами — открывающим и закрывающим.&lt;/strong&gt;</code></li>
+<li class="bb"><code>&lt;a href="http://www.example.com"&gt;Здесь элемент содержит атрибут href, то есть гиперссылку.&lt;/a&gt;</code></li>
+<li class="bb"><code>А вот пример пустого элемента: &lt;br&gt;</code></li></ul>
+<p>Регистр, в котором набрано имя элемента и имена атрибутов, в HTML значения не имеет (в отличие от XHTML). Элементы могут быть вложенными. Например, следующий код:
+</p>
+<div class="code"><pre>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span>=<span class="utf">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>HTML Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>
+            Этот текст будет полужирным, <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>а этот — ещё и курсивным<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>.
+         <span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+<p>даст такой результат:
+</p>
+<dl><dd><b>Этот текст будет полужирным, <i>а этот&#160;— ещё и курсивным</i></b>.</dd></dl>
+<p>Кроме элементов, в HTML-документах есть и <i>сущности</i> (англ.&#160;<span lang="en" style="font-style:italic;">entities)</span>&#160;— специальные символы. Сущности начинаются с символа амперсанда и имеют вид <code>&amp;<i>имя</i>;</code> или <code>&amp;#<i>NNNN</i>;</code>, где <i>NNNN</i>&#160;— код символа в Юникоде в десятичной системе счисления.
+</p><p>Например, <code>&amp;copy;</code>&#160;— знак авторского права (©). Как правило, сущности используются для представления символов, отсутствующих в кодировке документа, или же для представления «специальных» символов: <code>&amp;amp;</code>&#160;— амперсанда (&amp;), <code>&amp;lt;</code>&#160;— символа «меньше» (&lt;) и <code>&amp;gt;</code>&#160;— символа «больше» (&gt;), которые некорректно записывать «обычным» образом, из-за их особого значения в HTML.
+</p>
+<div>Подробнее по этой теме см. <a href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B_HTML">Элементы HTML</a>.</div>
+<div>Подробнее по этой теме см. <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B">Википедия:Специальные символы</a>.</div>
+<p>Каждый HTML-документ, отвечающий спецификации HTML какой-либо версии, должен начинаться со строки объявления версии HTML <code>&lt;!DOCTYPE…&gt;</code>, которая обычно выглядит примерно так:
+</p>
+<div><pre><span></span> <span>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;</span>
+<span>     &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</span>
+</pre></div>
+<p>Если эта строка не указана, то добиться корректного отображения документа в браузере становится труднее.
+</p><p>Далее обозначается начало и конец документа тегами <code>&lt;html&gt;</code> и <code>&lt;/html&gt;</code> соответственно. Внутри этих тегов должны находиться теги заголовка (<code>&lt;head&gt;&lt;/head&gt;</code>) и тела (<code>&lt;body&gt;&lt;/body&gt;</code>) документа.
+</p>
+</div>
+<div class="menu" align="right">
+	<table border="5">
+	<tr>
+	<tr><th>Меню</th></tr>
+	<tr><td><a href="main.html" title="Главная страница">Главная страница</a></td></tr>
+	<tr><td><a href="hist.html" title="История">История</a></td></tr>
+	<tr><td class="here">Структура</td></tr>
+	<tr><td><a href="cj.html" title="CSS и JavaScript">CSS и JavaScript</a></td></tr>
+	<tr><td><a href="pm.html" title="Достоинства и недостатки">Достоинства и недостатки</a></td></tr>
+	</tr>
+	</table>
+</div>
+<div class="rex">
+<p><img src="img/ex4.png" width="200"></p>
+<br><br><br><br><br><br>
+<p><img src="img/ex.png" width="200"></p>
+</div>
+</body>
+</html>
